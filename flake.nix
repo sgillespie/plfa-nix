@@ -70,6 +70,6 @@
           inputsFrom = [ pkgs.plfa ];
         };
 
-        packages.default = pkgs.plfa pkgs.agdaPackages;
+        packages.default = pkgs.plfa;
       });
 }
