@@ -70,6 +70,10 @@
           inputsFrom = [ pkgs.plfa ];
         };
 
-        packages.default = pkgs.plfa;
+        packages = rec {
+          default = plfa;
+          plfa = pkgs.plfa;
+          standard-library = pkgs.standard-library;
+        };
       });
 }
